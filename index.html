@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Manager</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div>
+            <textarea id="taskDescriptionInput" placeholder="Task description"></textarea>
+            <input type="text" id="assignedToInput" placeholder="Assigned to">
+            <input type="text" id="estimatedTime" placeholder="Estimated time">
+            <select id="priorityInput">
+                <option value="" disabled selected>Select Priority...</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <select id="statusInput">
+                <option value="" disabled selected>Select Status...</option>
+                <option value="Backlog">Backlog</option>
+                <option value="Todo">Todo</option>
+                <option value="In-progress">In-progress</option>
+                <option value="In-review">In-review</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <div>
+            <input type="text" id="searchInput" placeholder="Search tasks...">
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
